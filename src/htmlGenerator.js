@@ -48,24 +48,26 @@ const generateProfiles = (employees) => {
   
   // call to generate 
   const htmlGenerator = (employees) => {
-      return `
-      <!DOCTYPE html>
-      <html lang="en">
-      <head>
-          <meta charset="UTF-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>The Team</title>
-          <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      </head>
-      <body>
-          <header class="w3-container w3-green w3-center">
-              <h1>Meet The Team!</h1>
-          </header>
-          <section class="employee-cards w3-padding-large w3-row ">    
-          </section>
-      </body>
-      </html>
-      `
-    }
-    module.exports = htmlGenerator;
+    return `
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Team</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+  <header class="w3-container w3-red w3-center">
+    <h1>Meet the Team</h1>
+  </header>
+   <section class="employee-cards w3-padding-large w3-row ">
+       <!-- Placeholder for cards -->
+       ${generateProfiles(employees)}
+   </section> 
+  </body>
+</html>
+    `
+}
+
+module.exports = htmlGenerator;
