@@ -19,7 +19,7 @@ const generateProfiles = (employees) => {
      
       let profile = `
       <div class="w3-card-4 w3-col m5 l3 w3-margin">
-      <header class="w3-container w3-green">
+      <header class="w3-container w3-blue-grey">
         <h1>${employee.name}</h1>
         <h3>${employee.role}</h3>
       </header>
@@ -49,7 +49,7 @@ const generateProfiles = (employees) => {
   // call to generate 
   const htmlGenerator = (employees) => {
     return `
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -58,7 +58,7 @@ const generateProfiles = (employees) => {
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
   <body>
-  <header class="w3-container w3-red w3-center">
+  <header class="w3-container w3-teal w3-center">
     <h1>Meet the Team</h1>
   </header>
    <section class="employee-cards w3-padding-large w3-row ">
