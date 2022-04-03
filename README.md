@@ -9,6 +9,9 @@ Node application that allows users to input information regarding various employ
 * Inquirer
 * FS
 
+Preview:
+![2022-04-03](https://user-images.githubusercontent.com/93622828/161420893-771c794d-9647-44ca-acf4-6bf2f0894a62.png)
+
 ## Websitefile:
 https://lsmith32.github.io/team-profile-generator/
 
