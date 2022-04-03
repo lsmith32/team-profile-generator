@@ -24,6 +24,7 @@
     },
     "dependencies": {
         "bulma": "^0.9.3",
+        "i": "^0.3.7",
         "inquirer": "^8.2.0"
     }
 }

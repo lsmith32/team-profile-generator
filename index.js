@@ -1,4 +1,4 @@
-const questions = require('questions');
+const inquirer = require('inquirer');
 const Manager = require('./lib/Manager')
 const Engineer = require('./lib/Engineer')
 const Intern = require('./lib/Intern')
@@ -10,7 +10,7 @@ const regExEmail = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\
 
 //Prompts for Manager
 const addManager = async () => {
-    await questions
+    await inquirer
       .prompt([{
       type: 'text',
       name: 'name',
@@ -230,5 +230,4 @@ writeToFile = fileContent => {
   });
 }; 
 
-  addManager()
-   .then(addEmployee)
+addManager().then(addEmployee)
